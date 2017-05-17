@@ -1,0 +1,64 @@
+{
+    "css": {
+        "snippets": {
+            "c": "/**\n*------------------------------------------ \n* ${1:Section} \n*------------------------------------------\n*/\n",
+            "!i": "!important;",
+            ";bef": ":before {$1}",
+            ";aft": ":after {$1}",
+            ";fch": ":first-child {$1}",
+            ";lch": ":last-child {$1}",
+            ";och": ":only-child {$1}",
+            ";oot": ":only-of-type {$1}",
+            ";fot": ":first-of-type {$1}",
+            ";nch": ":nth-child($1) {$2}",
+            ";nlc": ":nth-last-child($1) {$2}",
+            ";not": ":nth-of-type($1) {$2}",
+            ";nlt": ":nth-last-of-type($1) {$2}",
+            "mza": "margin: 0 auto;"
+        }
+    },
+    "html": {
+        "filters": "html",
+        "snippets": {
+            "pp": "<?php ${cursor} ?>",
+            "php": "<?php\n\t${cursor}\n?>",
+            "php:foreach": "<?php foreach(\\$array as \\$k=>\\$v) {\n\t${child}${cursor} \n} ?>",
+            "php:if": "<?php if( ${cursor} ) : ?>",
+            "php:while": "<?php while( ${cursor} ); ?>",
+            "php:elseif": "<?php elseif( ${cursor} ) : ?>",
+            "php:else" : "<?php else : ?>${cursor}",
+            "php:endif": "<?php endif; ?>${cursor}",
+            "php:endwhile": "<?php endwhile; ?>${cursor}",
+            "wp:th": "<?php\n/**\n * Template Name: ${1} \n *\n * The ${2} for the ${3} theme\n *\n * @package ${4}\n*/\n?>",
+            "wp:gh": "<?php get_header(); ?>\n",
+            "wp:gf": "<?php get_footer(); ?>",
+            "wp:gs": "<?php get_sidebar(); ?>",
+            "wp:if": "<?php if ( have_posts() ) : ?>\n",
+            "wp:hp": "<?php while ( have_posts() ) : the_post(); ?>\n",
+            "wp:gt": "<?php get_template_part( '${1}', '${2}' ); ?>\n",
+            "wp:bp": "<?php bloginfo( 'template_directory' ); ?>",
+            "wp:gbts": "wp_gbts_boilerplate"
+        }
+    },
+    "scss": {
+        "extends": "css",
+        "snippets": {
+            "@inc": "@include ",
+            "@ext": "@extend %${cursor};",
+            "ibp": "@include breakpoint(${cursor}) {\n\t\n}",
+            "@imp": "@import '${cursor}';",
+            "!d": "!default;",
+            "imb": "@include mappy-bp(${cursor}) {\n\t\n}",
+            "mbu": "@include media-breakpoint-up(${cursor}) {\n\t\n}",
+            "mbd": "@include media-breakpoint-down(${cursor}) {\n\t\n}",
+            "mbo": "@include media-breakpoint-only(${cursor}) {\n\t\n}",
+            "mbb": "@include media-breakpoint-between(${cursor},${cursor}) {\n\t\n}"
+        }
+    },
+    "clike": {
+        "snippets": {
+            "c": "/**\n*------------------------------------------ \n* ${1:Section} \n*------------------------------------------\n*/\n",
+            "foreach": "foreach(\\$array as \\$k=>\\$v) {\n\t${child}${cursor} \n} \n"
+        }
+    }
+}
