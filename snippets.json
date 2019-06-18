@@ -14,7 +14,14 @@
             ";nlc": ":nth-last-child($1) {$2}",
             ";not": ":nth-of-type($1) {$2}",
             ";nlt": ":nth-last-of-type($1) {$2}",
-            "mza": "margin: 0 auto;"
+            "mza": "margin: 0 auto;",
+            "d:g": "display: grid;",
+            "gtc": "grid-template-columns: {$1};",
+            "gtr": "grid-template-rows: {$1};",
+            "gta": "grid-template-areas: \n{$1};",
+            "gc": "grid-column: {$1};",
+            "gr": "grid-row: {$1};",
+            "gg": "grid-gap: {$1};"
         }
     },
     "html": {
