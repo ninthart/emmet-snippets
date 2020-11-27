@@ -55,7 +55,9 @@
             "wp:hp": "<?php while ( have_posts() ) : the_post(); ?>\n",
             "wp:gt": "<?php get_template_part( '${1}', '${2}' ); ?>\n",
             "wp:bp": "<?php bloginfo( 'template_directory' ); ?>",
-            "wp:gbts": "wp_gbts_boilerplate"
+            "wp:gbts": "wp_gbts_boilerplate",
+            "slugby": "gbts_bp_wp",
+            "savent": "li.event>time[datetime=\"${1}\"]>span.day+span.month+span.year+span.time^div.event-image>img^div.event-info>h2.event-title+p.event-desc^div.event-link>a"
         }
     },
     "scss": {
